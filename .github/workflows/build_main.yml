@@ -18,7 +18,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y g++
 
       - name: Compile source
-        run: g++ src/main.cpp -o build/app
+        run: g++ src/main.cpp -o build/mainapp
 
       - name: Test run (optional)
-        run: ./build/app || echo "Executable finished with non-zero exit code."
+        run: ./build/mainapp || echo "Executable finished with non-zero exit code."
